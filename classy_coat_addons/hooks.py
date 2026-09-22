@@ -48,6 +48,10 @@ app_license = "mit"
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
+doctype_js = {
+	"Employee": "public/js/employee.js",
+}
+
 # Svg Icons
 # ------------------
 # include app icons in desk
@@ -81,6 +85,10 @@ app_license = "mit"
 # 	"methods": "classy_coat_addons.utils.jinja_methods",
 # 	"filters": "classy_coat_addons.utils.jinja_filters"
 # }
+
+jinja = {
+	"methods": ["classy_coat_addons.overrides.customer.statement_of_account.get_statement_of_account"],
+}
 
 # Installation
 # ------------
