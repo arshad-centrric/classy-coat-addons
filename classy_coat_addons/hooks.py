@@ -50,6 +50,7 @@ app_license = "mit"
 
 doctype_js = {
 	"Employee": "public/js/employee.js",
+	"Quotation": "public/js/quotation.js",
 }
 
 # Svg Icons
@@ -265,6 +266,7 @@ jinja = {
 # ignore_translatable_strings_from = []
 
 after_migrate = [
-    "classy_coat_addons.setup.custom_fields.create_custom_fields"
+    "classy_coat_addons.setup.custom_fields.create_custom_fields",
+    "classy_coat_addons.setup.property_setter.create_property_setters"
 ]
 
