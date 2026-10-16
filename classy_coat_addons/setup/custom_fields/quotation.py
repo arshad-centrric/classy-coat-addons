@@ -17,5 +17,14 @@ def get_quotation_fields():
 				# doesn't change for anyone; uncheck it on a quotation to print that column.
 				"insert_after": "group_same_items",
 			},
+			{
+				"fieldname": "cc_customer_tax_id",
+				"label": "Customer Tax ID",
+				"fieldtype": "Data",
+				"read_only": 1,
+				# Fetched by public/js/quotation.js whenever Customer is (re)selected; not fetch_from
+				# because party_name is a Dynamic Link and the party type isn't always Customer.
+				"insert_after": "cen_customer_category",
+			},
 		]
 	}
